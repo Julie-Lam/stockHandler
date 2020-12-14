@@ -34,7 +34,7 @@ namespace ProgTwoProject.View
 
         public Orders(OrderController orderController) 
         {
-            //On start-up, we want to load all orders using a method to retrieve all orderHeaders
+            //On start-up, load all orders using a method to retrieve all orderHeaders
 
             _orderController = orderController; 
             
@@ -44,10 +44,11 @@ namespace ProgTwoProject.View
             
             foreach (OrderHeader order in orderHeaders) {
                 order.setState(order.StateID); //Translates the OrderStateId to OrderState 
-                orderItems = _ordersRepo.GetOrderItemsByOrderHeaderID(order.OrderID);  // Gets all orderItems for a orderHeader ID
-                order._orderItems = orderItems; // Add it to each OrderHeader orderItems List
-                order.OrderLineNum = order._orderItems.Count(); 
-                //Sets the total of each OrderHeader 
+                orderItems = _ordersRepo.GetOrderItemsByOrderHeaderID(order.OrderID);  // Gets all orderItems associated with a specific orderHeader ID
+                order._orderItems = orderItems; // Add it to each OrderHeader's orderItems List
+                order.OrderLineNum = order._orderItems.Count(); //Counts the num of different orderItems 
+
+                //Sets the Total of each OrderHeader 
                 foreach (OrderItem orderItem in order._orderItems) {
                     order.Total = order.Total + (orderItem.Price * orderItem.Quantity); 
                 }
@@ -56,8 +57,8 @@ namespace ProgTwoProject.View
             dgOrders.ItemsSource = orderHeaders; // Populates the datagrid 
         }
 
-        //Add Order Btn Clicked -> Navigates to Add Order Page. 
-        private void button_Click(object sender, RoutedEventArgs e) // --> DONE 
+        //Add Order Btn Clicked -> Navigates to Add Order Page 
+        private void button_Click(object sender, RoutedEventArgs e) 
         {
             try {
 
@@ -67,7 +68,6 @@ namespace ProgTwoProject.View
             catch (Exception error) {
                 MessageBox.Show($"Error Encountered: {error}"); 
             }
-
         }
 
 

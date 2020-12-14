@@ -73,12 +73,8 @@
     </ApplicationDefinition>
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Data Access Layer\StockItemsRepository.cs" />
-    <Compile Include="Data\OrderComplete.cs" />
     <Compile Include="Data\OrderHeader.cs" />
     <Compile Include="Data\OrderItem.cs" />
-    <Compile Include="Data\OrderNew.cs" />
-    <Compile Include="Data\OrderPending.cs" />
-    <Compile Include="Data\OrderRejected.cs" />
     <Compile Include="Data\OrderState.cs" />
     <Compile Include="Data\OrderStates.cs" />
     <Compile Include="Data Access Layer\OrdersRepository.cs" />

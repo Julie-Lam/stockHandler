@@ -31,9 +31,9 @@ namespace ProgTwoProject.View
         OrderHeader _orderHeader = null; 
 
 
-        public AddOrderItem(OrderHeader orderHeader) //--> DONE
+        public AddOrderItem(OrderHeader orderHeader)
         {
-            //On load, this page must load all the stock items 
+            //On load, load all the stock items 
             _stockItemsRepo = new StockItemsRepository();
             IEnumerable<StockItem> stockItems = new List<StockItem>(); 
 
@@ -48,7 +48,7 @@ namespace ProgTwoProject.View
         }
 
         //Click Add New on an order Item 
-        private void Button_Click(object sender, RoutedEventArgs e) // --> DONE
+        private void Button_Click(object sender, RoutedEventArgs e) 
         {
             try {
                 int quantity = int.Parse(uiQuantity.Text); //Targets quantity in the textbox 
@@ -69,12 +69,5 @@ namespace ProgTwoProject.View
                 MessageBox.Show($"Error Encountered: {error}");
             }
         }
-
-
-
-
-        
-
-
     }
 }

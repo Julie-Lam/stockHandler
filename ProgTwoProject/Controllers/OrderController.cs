@@ -88,7 +88,7 @@ namespace ProgTwoProject.Controllers
             bool allowOrder = true;
             orderHeader.StateID = 3; // Completed
 
-            //TODO: Allow Instock to update ONLY IF the instock value is larger than the orderItem quantity
+            //Allow Instock to update ONLY IF the instock value is larger than the orderItem quantity
             //for each order item's , find it's stock item via stockItemId, then compare the orderItem quantity to the stockItem InStock
             foreach (OrderItem orderItem in orderHeader._orderItems) {
                 stockItem = _stockItemsRepo.GetStockItem(orderItem.StockItemId); //Retrieves stockItem via Id 

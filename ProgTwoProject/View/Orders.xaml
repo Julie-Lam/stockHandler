@@ -10,7 +10,6 @@
 
     <Grid Margin="10,0,0,0">
 
-        <!--<Button x:Name="button" Content="Add Order" Padding="10" Margin="470,10,182,353" Click="button_Click"/>-->
         <DataGrid x:Name="dgOrders" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,109,0,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding OrderID}" Width="15"/>

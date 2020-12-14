@@ -9,7 +9,7 @@ namespace ProgTwoProject.Data
     public abstract class OrderState
     {
         //Fields
-        public OrderHeader _orderHeader; //Might need to be changed?
+        public OrderHeader _orderHeader;
 
 
         //Properties 
@@ -19,21 +19,10 @@ namespace ProgTwoProject.Data
         }
 
 
-
         //ctor
         public OrderState()
         {
 
-        }
-
-        //Methods
-        protected void Complete() { 
-        }
-
-        protected void Reject() { 
-        }
-
-        protected void Submit() { 
         }
  
     }

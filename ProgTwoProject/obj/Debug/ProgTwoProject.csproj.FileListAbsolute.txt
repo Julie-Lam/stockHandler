@@ -154,3 +154,33 @@ C:\Cert IV Programming\Prog II Project Assignment (02122020)\ProgTwoProject\Prog
 C:\Cert IV Programming\Prog II Project Assignment (02122020)\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.csproj.CopyComplete
 C:\Cert IV Programming\Prog II Project Assignment (02122020)\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.exe
 C:\Cert IV Programming\Prog II Project Assignment (02122020)\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.pdb
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\ProgTwoProject.exe.config
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\ProgTwoProject.exe
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\ProgTwoProject.pdb
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.AccessControl.dll
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.Permissions.dll
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.AccessControl.xml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.Permissions.xml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.csprojAssemblyReference.cache
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\MainWindow.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\AddOrder.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\AddOrderItem.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\OrderDetails.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\Orders.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\App.g.cs
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject_MarkupCompile.cache
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject_MarkupCompile.lref
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\MainWindow.baml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\AddOrder.baml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\AddOrderItem.baml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\OrderDetails.baml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\View\Orders.baml
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.g.resources
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.Properties.Resources.resources
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.csproj.GenerateResource.cache
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.csproj.CoreCompileInputs.cache
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.csproj.CopyComplete
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.exe
+C:\Users\lamju\Documents\Personal Programming\ProgTwoProject\ProgTwoProject\obj\Debug\ProgTwoProject.pdb

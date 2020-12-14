@@ -30,24 +30,22 @@ namespace ProgTwoProject.View
         private OrderHeader _orderHeader;
         private OrderController _orderController = new OrderController(); 
 
-        public AddOrder(OrderHeader orderHeader) // --> DONE
+        public AddOrder(OrderHeader orderHeader) 
         {
-            // On start up, this page loads the orderHeader info from prev page and uses it to populate the UI field. 
+            // On start up, loads the orderHeader info from prev page and uses it to populate the UI field. 
             _orderHeader = orderHeader; //Retrieves orderHeader object from previous page, positioned as a global value. 
 
             _orderHeader.setState(_orderHeader.StateID); 
-            /*_orderHeader.setState();*/ //Converts OrderStateID to OrderState
             InitializeComponent();
 
             uiOrderID.Text = _orderHeader.OrderID.ToString();
             uiDateAndTime.Text = _orderHeader.DateTime.ToString();
             uiTotal.Text = _orderHeader.Total.ToString();
             uiOrderState.Text = _orderHeader.OrderState; 
-
         }
 
         //Add Btn Click --> Navigate to AddOrderItem Page
-        private void AddButton_Click(object sender, RoutedEventArgs e) // --> DONE
+        private void AddButton_Click(object sender, RoutedEventArgs e) 
         {
             try {
                 NavigationService.Navigate(new AddOrderItem(_orderHeader)); //Navigates the info abt the current orderHeader to the next page 
@@ -58,7 +56,7 @@ namespace ProgTwoProject.View
             }
         }
 
-        //Submit Btn Click --> DONE
+        //Submit Btn Click --> Navigate to Orders Page
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try {
@@ -73,15 +71,13 @@ namespace ProgTwoProject.View
         }
 
 
-        //Delete Btn Click --> TODO
+        //Delete Btn Click --> Return to Orders Page
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             try {
-                //Navigate back to Orders View
+                _orderController.DeleteOrderHeaderAndOrderItems(_orderHeader.OrderID); //Delete orderHeader from db 
 
-                _orderController.DeleteOrderHeaderAndOrderItems(_orderHeader.OrderID); //delete orderHeader
-
-                NavigationService.Navigate(new Orders(_orderController));
+                NavigationService.Navigate(new Orders(_orderController)); //Navigate back to Orders View
             }
             catch (Exception error)
             {

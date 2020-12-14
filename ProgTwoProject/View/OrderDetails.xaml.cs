@@ -41,7 +41,7 @@ namespace ProgTwoProject.View
 
             var orderItems = _ordersRepo.GetOrderItemsByOrderHeaderID(orderHeader.OrderID); // Retrieves all the orderItems for this orderHeader
 
-            // TODO #4 Calc Total amount for EA. orderItem's price*quantity to add into datagrid 
+            // Calc Total amount for EA. orderItem's price*quantity to add into datagrid 
             foreach (OrderItem orderItem in orderItems) {
                 orderItem.Total += (orderItem.Price * orderItem.Quantity); 
             }
@@ -55,7 +55,7 @@ namespace ProgTwoProject.View
             try {
                 int orderHeaderID = _orderHeader.OrderID; // Targets this orderheader's OrderID. 
 
-                _orderController.ProcessOrder(orderHeaderID); //Updates Instock amount and Status :(
+                _orderController.ProcessOrder(orderHeaderID); //Updates Instock amount and Status 
 
                 NavigationService.Navigate(new Orders(_orderController)); // Navigate back to Orders View 
             }
@@ -76,7 +76,6 @@ namespace ProgTwoProject.View
             {
                 MessageBox.Show($"Error Encountered: {error}");
             }
-
         }
 
 
