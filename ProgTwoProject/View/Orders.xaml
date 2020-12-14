@@ -1,0 +1,33 @@
+﻿<Page x:Class="ProgTwoProject.View.Orders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProgTwoProject.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Orders">
+
+    <Grid Margin="10,0,0,0">
+
+        <!--<Button x:Name="button" Content="Add Order" Padding="10" Margin="470,10,182,353" Click="button_Click"/>-->
+        <DataGrid x:Name="dgOrders" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,109,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding OrderID}" Width="15"/>
+                <DataGridTextColumn Header="Date/Time" Binding="{Binding DateTime}" Width="100"/>
+                <DataGridTextColumn Header="Number of Line Items"  Binding="{Binding OrderLineNum}" x:Name="orderItemsCount" Width="200"/>
+                <DataGridTextColumn Header="Total" Binding="{Binding Total}" Width="100"/>
+                <DataGridTextColumn Header="Current State" Binding="{Binding OrderState}" Width="200"/>
+                <DataGridTemplateColumn Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="View Details" Click="Button_Click_1"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Orders" HorizontalAlignment="Left" Margin="349,33,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="95" Height="48"/>
+        <Button x:Name="button" Content="Add Order" Click="button_Click" HorizontalAlignment="Left" Margin="603,17,0,0" VerticalAlignment="Top" Width="129" Height="64"/>
+    </Grid>
+</Page>
